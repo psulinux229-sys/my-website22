@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<link rel="stylesheet" href="style.css">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "error-dim": "#a70138",
+                        "on-tertiary-container": "#64003a",
+                        "surface-container-highest": "#e1d8ff",
+                        "on-primary": "#f4f1ff",
+                        "on-secondary-fixed-variant": "#7511c3",
+                        "surface": "#faf4ff",
+                        "secondary-fixed": "#e5c6ff",
+                        "on-tertiary": "#ffeff2",
+                        "primary-container": "#9396ff",
+                        "primary-fixed-dim": "#8387ff",
+                        "on-secondary-fixed": "#4f0089",
+                        "surface-container": "#ece4ff",
+                        "surface-tint": "#4647d3",
+                        "on-error-container": "#510017",
+                        "tertiary-container": "#ff8cbc",
+                        "secondary-dim": "#740ec2",
+                        "on-surface": "#302950",
+                        "on-tertiary-fixed": "#37001d",
+                        "tertiary-fixed": "#ff8cbc",
+                        "primary-dim": "#3939c7",
+                        "on-surface-variant": "#5e5680",
+                        "error-container": "#f74b6d",
+                        "surface-bright": "#faf4ff",
+                        "primary": "#4647d3",
+                        "outline": "#79719d",
+                        "surface-container-low": "#f4eeff",
+                        "tertiary-dim": "#9d005d",
+                        "on-error": "#ffefef",
+                        "on-background": "#302950",
+                        "primary-fixed": "#9396ff",
+                        "background": "#faf4ff",
+                        "error": "#b41340",
+                        "on-primary-container": "#0a0081",
+                        "surface-variant": "#e1d8ff",
+                        "on-primary-fixed-variant": "#0e009d",
+                        "tertiary": "#b00d6a",
+                        "on-secondary-container": "#6900b4",
+                        "secondary": "#8126cf",
+                        "inverse-on-surface": "#a097c5",
+                        "on-tertiary-fixed-variant": "#740044",
+                        "secondary-fixed-dim": "#dbb4ff",
+                        "on-primary-fixed": "#000000",
+                        "inverse-primary": "#8083ff",
+                        "inverse-surface": "#0f072e",
+                        "secondary-container": "#e5c6ff",
+                        "tertiary-fixed-dim": "#ff73b1",
+                        "outline-variant": "#b0a7d6",
+                        "surface-container-high": "#e6deff",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-dim": "#d8ceff",
+                        "on-secondary": "#fbefff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Plus Jakarta Sans"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Manrope', sans-serif; }
+        h1, h2, h3 { font-family: 'Plus Jakarta Sans', sans-serif; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface min-h-screen pb-32">
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="services.html">Services</a>
+<a href="contact.html">Contact</a>
+<a href="blog.html">Blog</a>
+</nav>
+<!-- TopAppBar -->
+<header class="docked w-full top-0 sticky z-50 bg-[#faf4ff]/70 backdrop-blur-2xl dark:bg-slate-950/70 shadow-[0_12px_40px_rgba(48,41,80,0.06)] flex items-center justify-between px-6 py-4">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-indigo-600 dark:text-indigo-400" data-icon="search">search</span>
+</div>
+<h1 class="text-2xl font-extrabold text-[#302950] dark:text-slate-100 font-['Plus_Jakarta_Sans'] tracking-tight">StudySphere</h1>
+<div class="active:scale-95 transition-transform duration-200">
+<img alt="Student Profile Avatar" class="w-10 h-10 rounded-full object-cover border-2 border-primary-container" data-alt="portrait of a focused teenage student with a friendly smile, warm cinematic indoor lighting with soft bokeh background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7OV2kEaKcsJdE-W8YZlGIjKkfa2qq2pF8qyun3Ito9jPCGaXbMllOa5VWm7dmdnCnoHqXW9B26hTd6TWltF58_uiw1Ja86ZGkeV3tAMebV8jTDxEEjwaixVskn1yrzW1BJ3bb-NL9BvQun5hcMGg9V1al8YndOlJIN59ow0uACgC90dKETTAD_EFH88md98WOiqL3EunbYN70Ac92jnpmUmG0zccPRE3lwS4oh7wcS3pOsUYLtVRtNEfeuQDMjEftVYcIgdOkStLl"/>
+</div>
+</header>
+<main class="max-w-5xl mx-auto px-6 pt-8 space-y-10">
+<!-- Profile Hero Section -->
+<section class="flex flex-col md:flex-row items-center gap-8 bg-surface-container-low p-8 rounded-xl relative overflow-hidden">
+<div class="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full -mr-20 -mt-20"></div>
+<div class="relative">
+<div class="w-32 h-32 rounded-full p-1 bg-gradient-to-tr from-primary to-secondary">
+<img alt="Alex Rivers" class="w-full h-full rounded-full object-cover border-4 border-surface" data-alt="close up profile photo of a happy young student wearing casual clothes in a bright modern library" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpOK89IPsqq-EZggmIuYrKyXucHFoaJLJ40vN1sQxxngfRwXsh9KV6nRyFI8vdsiVuYNMp2DFLET-LcHv4eC_LlE-Wbt6udEo1tcjMvL7-7uUZdZ4FSYRXYs1WC3Kk0uEkIWc5xNnKaD3buI-dts0tfu_TokFXVXgE5PqYvNMMGn3cHKcNfqMYSiDTBtz1KJkP1TbjZO3ozICylqz15FoN-U49E9KFV_RCh0xgNlIqGFGmYqEtfawOazDNsaQvwtdkJDzrIqzrljUh"/>
+</div>
+<div class="absolute bottom-1 right-1 bg-primary text-on-primary p-2 rounded-full shadow-lg">
+<span class="material-symbols-outlined text-sm" data-icon="edit">edit</span>
+</div>
+</div>
+<div class="text-center md:text-left space-y-2 z-10">
+<h2 class="text-4xl font-extrabold tracking-tight text-on-surface">Alex Rivers</h2>
+<p class="text-on-surface-variant font-medium">Class of 2025 • Advanced Mathematics &amp; Physics</p>
+<div class="flex flex-wrap justify-center md:justify-start gap-3 mt-4">
+<span class="px-4 py-1.5 bg-surface-container-highest text-primary-dim rounded-full text-sm font-bold">Gold Scholar</span>
+<span class="px-4 py-1.5 bg-tertiary-container/20 text-tertiary-dim rounded-full text-sm font-bold">Streak: 14 Days</span>
+</div>
+</div>
+</section>
+<!-- Bento Grid: Stats & Goals -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Points Summary Card -->
+<div class="md:col-span-1 bg-surface-container-lowest p-8 rounded-lg shadow-sm space-y-6">
+<div class="flex items-center justify-between">
+<h3 class="text-xl font-bold tracking-tight">Academic Wealth</h3>
+<span class="material-symbols-outlined text-primary" data-icon="stars" style="font-variation-settings: 'FILL' 1;">stars</span>
+</div>
+<div class="space-y-1">
+<p class="text-5xl font-black text-primary">12,450</p>
+<p class="text-on-surface-variant font-semibold text-sm uppercase tracking-wider">Total Sphere Points</p>
+</div>
+<div class="pt-4 space-y-3">
+<div class="flex justify-between items-center text-sm">
+<span class="text-on-surface-variant">Next Level: Master</span>
+<span class="font-bold text-primary">85%</span>
+</div>
+<div class="w-full h-3 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-gradient-to-r from-primary to-secondary w-[85%] rounded-full"></div>
+</div>
+</div>
+</div>
+<!-- Academic Goals Card -->
+<div class="md:col-span-2 bg-surface-container-lowest p-8 rounded-lg shadow-sm">
+<div class="flex items-center justify-between mb-8">
+<h3 class="text-xl font-bold tracking-tight">Academic Goals</h3>
+<button class="text-primary font-bold text-sm hover:opacity-70 transition-opacity">Add New</button>
+</div>
+<div class="space-y-4">
+<div class="group p-4 rounded-xl bg-surface-container-low flex items-center gap-4 hover:bg-surface-container transition-colors">
+<div class="w-12 h-12 rounded-full bg-white flex items-center justify-center text-primary shadow-sm">
+<span class="material-symbols-outlined" data-icon="rocket_launch">rocket_launch</span>
+</div>
+<div class="flex-1">
+<h4 class="font-bold text-on-surface">Master Quantum Mechanics</h4>
+<p class="text-sm text-on-surface-variant">Module 4 of 6 completed</p>
+</div>
+<span class="material-symbols-outlined text-outline-variant" data-icon="chevron_right">chevron_right</span>
+</div>
+<div class="group p-4 rounded-xl bg-surface-container-low flex items-center gap-4 hover:bg-surface-container transition-colors">
+<div class="w-12 h-12 rounded-full bg-white flex items-center justify-center text-secondary shadow-sm">
+<span class="material-symbols-outlined" data-icon="history_edu">history_edu</span>
+</div>
+<div class="flex-1">
+<h4 class="font-bold text-on-surface">GPA Milestone 3.8+</h4>
+<p class="text-sm text-on-surface-variant">Current Term Progress: 92%</p>
+</div>
+<span class="material-symbols-outlined text-outline-variant" data-icon="chevron_right">chevron_right</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Settings Section: Reminders & Notifications -->
+<section class="bg-surface-container-lowest p-8 rounded-lg shadow-sm">
+<h3 class="text-xl font-bold tracking-tight mb-8">Study Reminders &amp; Focus</h3>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-x-12 gap-y-8">
+<div class="flex items-center justify-between p-2">
+<div class="space-y-1">
+<p class="font-bold text-on-surface">Morning Focus Session</p>
+<p class="text-sm text-on-surface-variant">Daily at 7:30 AM</p>
+</div>
+<div class="relative inline-flex items-center cursor-pointer">
+<div class="w-12 h-6 bg-primary rounded-full"></div>
+<div class="absolute left-7 w-4 h-4 bg-white rounded-full transition-transform"></div>
+</div>
+</div>
+<div class="flex items-center justify-between p-2">
+<div class="space-y-1">
+<p class="font-bold text-on-surface">Nightly Review</p>
+<p class="text-sm text-on-surface-variant">Weekdays at 9:00 PM</p>
+</div>
+<div class="relative inline-flex items-center cursor-pointer">
+<div class="w-12 h-6 bg-surface-container-highest rounded-full"></div>
+<div class="absolute left-1 w-4 h-4 bg-white rounded-full transition-transform"></div>
+</div>
+</div>
+<div class="flex items-center justify-between p-2">
+<div class="space-y-1">
+<p class="font-bold text-on-surface">Deep Work Mode</p>
+<p class="text-sm text-on-surface-variant">Auto-mute notifications when studying</p>
+</div>
+<div class="relative inline-flex items-center cursor-pointer">
+<div class="w-12 h-6 bg-primary rounded-full"></div>
+<div class="absolute left-7 w-4 h-4 bg-white rounded-full transition-transform"></div>
+</div>
+</div>
+<div class="flex items-center justify-between p-2">
+<div class="space-y-1">
+<p class="font-bold text-on-surface">Break Reminders</p>
+<p class="text-sm text-on-surface-variant">Every 45 minutes of focus</p>
+</div>
+<div class="relative inline-flex items-center cursor-pointer">
+<div class="w-12 h-6 bg-primary rounded-full"></div>
+<div class="absolute left-7 w-4 h-4 bg-white rounded-full transition-transform"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Account Actions -->
+<div class="flex flex-col sm:flex-row gap-4 pt-4">
+<button class="flex-1 py-4 bg-gradient-to-r from-primary to-primary-container text-on-primary font-bold rounded-full shadow-lg hover:opacity-90 active:scale-[0.98] transition-all">
+                Edit Professional Profile
+            </button>
+<button class="flex-1 py-4 bg-surface-container text-primary-dim font-bold rounded-full hover:bg-surface-container-high active:scale-[0.98] transition-all">
+                Export Academic Portfolio
+            </button>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-3 bg-[#faf4ff]/80 backdrop-blur-2xl dark:bg-slate-950/80 shadow-[0_-8px_30px_rgba(48,41,80,0.04)] rounded-t-[2.5rem]">
+<div class="flex flex-col items-center justify-center text-[#302950]/50 dark:text-slate-500 px-5 py-2 hover:bg-white/50 dark:hover:bg-slate-800/50 active:scale-90 transition-all duration-300 ease-out">
+<span class="material-symbols-outlined" data-icon="home_app_logo">home_app_logo</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-semibold mt-1">Home</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#302950]/50 dark:text-slate-500 px-5 py-2 hover:bg-white/50 dark:hover:bg-slate-800/50 active:scale-90 transition-all duration-300 ease-out">
+<span class="material-symbols-outlined" data-icon="auto_stories">auto_stories</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-semibold mt-1">Library</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#302950]/50 dark:text-slate-500 px-5 py-2 hover:bg-white/50 dark:hover:bg-slate-800/50 active:scale-90 transition-all duration-300 ease-out">
+<span class="material-symbols-outlined" data-icon="leaderboard">leaderboard</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-semibold mt-1">Growth</span>
+</div>
+<!-- Active Tab -->
+<div class="flex flex-col items-center justify-center bg-indigo-100/50 dark:bg-indigo-900/30 text-indigo-700 dark:text-indigo-200 rounded-full px-5 py-2 active:scale-90 transition-all duration-300 ease-out">
+<span class="material-symbols-outlined" data-icon="person" style="font-variation-settings: 'FILL' 1;">person</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-semibold mt-1">Profile</span>
+</div>
+</nav>
+<footer>
+<p>© 2026 My Website</p>
+</footer>
+</body></html>
